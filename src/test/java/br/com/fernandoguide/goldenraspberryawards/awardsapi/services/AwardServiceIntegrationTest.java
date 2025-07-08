@@ -22,7 +22,6 @@ class AwardServiceIntegrationTest {
     void deveRetornarIntervalosDePremiacaoDosProdutores() {
         AwardIntervalsResponse response = awardService.getProducerAwardIntervals();
 
-        // Verifica se há pelo menos um intervalo mínimo e máximo
         List<IntervalAward> min = response.min();
         List<IntervalAward> max = response.max();
 
@@ -31,7 +30,6 @@ class AwardServiceIntegrationTest {
         assertThat(min).isNotEmpty();
         assertThat(max).isNotEmpty();
 
-        // Opcional: Verifica se os intervalos estão ordenados corretamente
         Integer minInterval = min.get(0).interval();
         Integer maxInterval = max.get(0).interval();
 
