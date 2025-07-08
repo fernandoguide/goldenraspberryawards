@@ -61,7 +61,7 @@ public class CsvDataLoaderService {
     }
 
     private void parseAndSaveMovie(String line) {
-        String[] parts = line.split(";", -1); // <- Permite campos vazios no final
+        String[] parts = line.split(";", -1);
 
         if (parts.length < 5) {
             logger.warn("Skipping malformed line: {}", line);
