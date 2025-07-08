@@ -11,7 +11,7 @@ Esta é uma API RESTful para consultar os produtores com o maior e menor interva
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO]
+    git clone https://github.com/fernandoguide/goldenraspberryawards
     cd goldenraspberryawards
     ```
 
