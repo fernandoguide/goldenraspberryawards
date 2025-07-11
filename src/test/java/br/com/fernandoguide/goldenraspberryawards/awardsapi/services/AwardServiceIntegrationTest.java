@@ -30,8 +30,8 @@ class AwardServiceIntegrationTest {
         assertThat(min).isNotEmpty();
         assertThat(max).isNotEmpty();
 
-        Integer minInterval = min.get(0).interval();
-        Integer maxInterval = max.get(0).interval();
+        var minInterval = min.get(0).interval();
+        var maxInterval = max.get(0).interval();
 
         assertThat(min.stream().allMatch(i -> i.interval().equals(minInterval))).isTrue();
         assertThat(max.stream().allMatch(i -> i.interval().equals(maxInterval))).isTrue();
