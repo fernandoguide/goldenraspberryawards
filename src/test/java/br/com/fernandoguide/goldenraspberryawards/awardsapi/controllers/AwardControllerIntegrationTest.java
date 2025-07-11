@@ -25,7 +25,7 @@ class AwardControllerIntegrationTest {
             "/api/awards/producer-intervals", AwardIntervalsResponse.class);
 
         assertThat(response.getStatusCode().is2xxSuccessful()).isTrue();
-        AwardIntervalsResponse body = response.getBody();
+        var body = response.getBody();
         assertThat(body).isNotNull();
 
         var esperadoMin = IntervalAwardFixture.buid("Joel Silver", 1, 1990, 1991);
